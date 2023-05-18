@@ -1,0 +1,5 @@
+#!/bin/bash
+
+tmux new-session -d -s sshws "node /usr/sbin/cendrawasih.js -dport 83 -mport 80 -o /etc/cendrawasih/log/sshws.log"
+tmux new-session -d -s sshwsssl "node /usr/sbin/cendrawasih.js -dport 83 -mport 700"
+importantfile
